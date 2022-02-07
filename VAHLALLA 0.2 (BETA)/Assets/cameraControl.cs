@@ -1,15 +1,18 @@
 
 using UnityEngine;
 
+// Classe cameraControl per il movimento della videocamera
+
 public class cameraControl : MonoBehaviour
 {
 
     [SerializeField] private Transform player;
     [SerializeField] private float dist;
+    // Velocità videocamera:
     [SerializeField] private float velCamera;
     private float lookAhead;
 
-
+    
     private void Update()
     {
         transform.position = new Vector3(player.position.x + lookAhead, transform.position.y, transform.position.z);
