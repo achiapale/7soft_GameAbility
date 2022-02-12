@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//permette ai bottoni di cambiare scena
+// Script che permette ai bottoni di cambiare scena
 
 public class ButtonSelection : MonoBehaviour
 {
@@ -33,7 +33,7 @@ public class ButtonSelection : MonoBehaviour
     }
   
 
-    //chiude il gioco
+    // Chiude il gioco
 
     public void QuitButton()
     {
