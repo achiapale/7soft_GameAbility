@@ -7,19 +7,17 @@ public class CameraControl : MonoBehaviour
 
     [SerializeField] private Transform player;
     [SerializeField] private float dist;
-    // Velocit‡ videocamera:
+    // Velocit√† videocamera:
     [SerializeField] private float velCamera;
     private float lookAhead;
 
 
+// Segue il personaggio:
+
     private void Update()
     {
-        //segue il personaggio
         transform.position = new Vector3(player.position.x + lookAhead, transform.position.y, transform.position.z);
         lookAhead = Mathf.Lerp(lookAhead, (dist * player.localScale.x), Time.deltaTime * velCamera);
-
-       
     }
-
 
 }
