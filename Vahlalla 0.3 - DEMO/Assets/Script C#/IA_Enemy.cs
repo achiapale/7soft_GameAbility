@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Controllo IA degli sprite nemici
+
 public class IA_Enemy : MonoBehaviour
 {
     [SerializeField] private float recupero;
@@ -13,8 +15,7 @@ public class IA_Enemy : MonoBehaviour
 
     private Health saluteGiocatore;
 
-    //delay per evitare il contatto con un nemico più volte in un
-    //periodo di tempo ristretto
+    // Delay per evitare il loop del contatto:
 
     private void Update()
     {
@@ -31,7 +32,7 @@ public class IA_Enemy : MonoBehaviour
         
     }
 
-    //controllo sulla salute del giocatore
+    // Controllo la salute del player:
 
     private bool PlayerInSight()
     {
@@ -49,7 +50,7 @@ public class IA_Enemy : MonoBehaviour
       
     }
 
-    //area di contatto dove il fantasma fa danno
+    // Area di contatto: (se toccata, infligge il danno)
 
     private void OnDrawGizmos()
     {
@@ -60,7 +61,7 @@ public class IA_Enemy : MonoBehaviour
 
     }
 
-    //funzione per il danno subito
+    // Funzione per danneggiare il giocatore:
 
     private void DamagePlayer()
     {
