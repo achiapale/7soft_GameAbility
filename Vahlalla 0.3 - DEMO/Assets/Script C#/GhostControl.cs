@@ -1,6 +1,6 @@
 using UnityEngine;
 
-//controllo del nemico (fantasma)
+// Controllo del nemico (fantasma)
 
 public class GhostControl : MonoBehaviour
 {
@@ -22,7 +22,7 @@ public class GhostControl : MonoBehaviour
         initScale = enemy.localScale;
     }
 
-    //movimento del fantasma tra due punti contrassegnati
+    // Sposto il fantasma tra due punti:
 
     private void Update()
     {
@@ -58,6 +58,7 @@ public class GhostControl : MonoBehaviour
     {
         movingLeft = !movingLeft;
     }
+
 
     private void MoveInDirection(int _direction)
     {
