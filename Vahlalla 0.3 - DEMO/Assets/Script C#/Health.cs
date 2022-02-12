@@ -23,7 +23,7 @@ public class Health : MonoBehaviour
 
     }
 
-    //verifica se il personaggio ha terminato le vite o se bisogna toglierne una
+    // Verifico se il player ha terminato le vite:
 
     public void Danno(float _damage)
     {
@@ -45,7 +45,7 @@ public class Health : MonoBehaviour
 
     }
 
-    //verifica se il personaggio è morto
+    // Verifico se il player Ã¨ morto:
 
     private void Update()
     {
@@ -60,8 +60,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    //delay (?)
-
+    
     IEnumerator Timedelay()
     {
         yield return new WaitForSeconds(2);
@@ -72,7 +71,7 @@ public class Health : MonoBehaviour
 
     }
 
-    //quando riparte il giocosi azzerano i valori
+    // Azzero i valori (riporto salute a 3):
 
     public void RipristinaSalute()
     {
