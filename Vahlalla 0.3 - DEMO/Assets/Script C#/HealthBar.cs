@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-//barra della salute
+// Controllo HealthBar (barra 3 cuori):
 
 public class HealthBar : MonoBehaviour
 {
