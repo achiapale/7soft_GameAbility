@@ -1,6 +1,6 @@
 using UnityEngine;
 
-//controllo del volume
+// controllo del volume
 
 public class VolumeValueChange : MonoBehaviour
 {
@@ -21,7 +21,7 @@ public class VolumeValueChange : MonoBehaviour
         audioSrc.volume = musicVolume;
     }
 
-    //prende il valore dello slider e lo imposta come musicValue
+    // prende il valore dello slider e lo imposta come musicValue
     public void SetVolume(float vol)
     {
         musicVolume = vol;
